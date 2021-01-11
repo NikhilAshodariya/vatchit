@@ -1,0 +1,28 @@
+{
+  "name": "vatchit",
+  "version": "1.0.0",
+  "description": "This is a chat app",
+  "main": "node app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikhilAshodariya/vatchit.git"
+  },
+  "author": "Nikhil Ashodariya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikhilAshodariya/vatchit/issues"
+  },
+  "homepage": "https://github.com/NikhilAshodariya/vatchit#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "iam_access": "^1.0.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "cookie-parser": "^1.4.5"
+  }
+}

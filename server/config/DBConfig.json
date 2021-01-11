@@ -1,0 +1,13 @@
+{
+  "mongoConfig": {
+    "serverUrl": "mongodb://localhost:27017/",
+    "database": "vatchit"
+  },
+  "collections": [
+    "users",
+    "roles",
+    "permissions",
+    "roles_permissions",
+    "users_roles"
+  ]
+}
