@@ -4,13 +4,11 @@ const Users = mongoCollections.users;
 
 const getFriendsListForUser = async (email) =>{
     let usersCollection = await Users();
-    console.log(email);
 
     let User = await usersCollection.findOne({
         email: email
     });
 
-    console.log(User);
     return User["friends"];
 };
 

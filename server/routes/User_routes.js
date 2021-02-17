@@ -5,6 +5,7 @@ const router = express.Router();
 
 const getFriendsListForUser = async (req, res, next) => {
     let check = await User.getFriendsListForUser(req.params.user_email);
+    res.header("Access-Control-Allow-Origin", "*");
     res.send(check);
 };
 
@@ -12,7 +13,7 @@ const createUser = async (req, res, next) => {
     let returnInfo = await User.createUser({
         "email": req.params.user_email
     });
-
+    res.header("Access-Control-Allow-Origin", "*");
     res.send(returnInfo);
 };
 
