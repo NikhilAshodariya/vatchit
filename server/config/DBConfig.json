@@ -8,6 +8,7 @@
     "roles",
     "permissions",
     "roles_permissions",
-    "users_roles"
+    "users_roles",
+    "login"
   ]
 }
