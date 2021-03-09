@@ -9,6 +9,7 @@
     "permissions",
     "roles_permissions",
     "users_roles",
-    "login"
+    "login",
+    "signup"
   ]
 }

@@ -5,22 +5,22 @@ const router = express.Router();
 
 const isValidUser = async (req, res, next) => {
     try {
-        console.log(req.body)
         let check = await Login.isValidUser(req.body.email, req.body.password);
-        console.log(check);
         res.header("Access-Control-Allow-Origin", "*");
-        res.send(check);
+        res.send({
+            "status": check
+        });
     }
     catch (e) {
         console.log("invalid username passed");
         res.header("Access-Control-Allow-Origin", "*");
-        res.send(false);
+        res.send({
+            "status": "Invalid request"
+        });
     }
 
 };
 
 router.post("/", isValidUser);
-
-// router.post("/", isValidUser);
 
 module.exports = router;
